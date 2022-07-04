@@ -1,0 +1,18 @@
+[user]
+	email = fisevcik@gmail.com
+	name = Hayaka Kayori
+[core]
+	ui = auto
+	editor = nano
+[init]
+	defaultBranch = main
+[credential]
+	helper = store
+[alias]
+	gr = log --graph --format=oneline
+	st = status -sb
+    ci = commit
+    co = checkout
+    br = branch
+    unstage = reset HEAD --
+    last = log -1 HEAD
