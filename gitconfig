@@ -1,9 +1,7 @@
-[user]
-	email = fisevcik@gmail.com
-	name = Hayaka Kayori
 [core]
 	ui = auto
 	editor = nano
+	excludesFile = ~/.gitignore
 [init]
 	defaultBranch = main
 [credential]
@@ -16,3 +14,10 @@
     br = branch
     unstage = reset HEAD --
     last = log -1 HEAD
+[include]
+	path = ~/.gitconfig_local
+#for user settings
+#[user]
+#	email = user@email
+#	name = name
+

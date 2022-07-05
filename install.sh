@@ -25,4 +25,9 @@ if [ -f ~/.gitconfig ]; then
 fi
 ln -s ${BASEDIR}/gitconfig ~/.gitconfig
 
+if [ -f ~/.gitignore ]; then
+    rm -v ~/.gitignore
+fi
+ln -s ${BASEDIR}/gitignore ~/.gitignore
+
 unset BASEDIR
