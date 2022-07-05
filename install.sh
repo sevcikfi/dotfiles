@@ -1,10 +1,28 @@
 #!/usr/bin/env bash
 
-#BASEDIR=$(dirname "$0")
+BASEDIR=$(cd $(dirname "$0") && pwd)
+#BASEDIR=$(pwd)
 #echo "$BASEDIR"
 
-\cp -fv $(dirname $0)/bash_aliases $HOME/.bash_aliases
+#\cp -fv $(dirname $0)/bash_aliases $HOME/.bash_aliases
 #source $HOME/.bashrc #not working, need to run source additionally
 
+#bash
+if [ -f ~/.bashrc ]; then
+    rm -v ~/.bashrc
+fi
+ln -s ${BASEDIR}/bashrc ~/.bashrc
 
 
+if [ -f ~/.bash_aliases.sh ]; then
+    rm -v ~/.bash_aliases.sh
+fi
+ln -s ${BASEDIR}/bash_aliases.sh ~/.bash_aliases.sh
+
+#git
+if [ -f ~/.gitconfig ]; then
+    rm -v ~/.gitconfig
+fi
+ln -s ${BASEDIR}/gitconfig ~/.gitconfig
+
+unset BASEDIR
