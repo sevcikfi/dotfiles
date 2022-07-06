@@ -15,6 +15,16 @@ alias lsa='ls -lasSh'
 alias lt='ls -lahS'
 alias l='ls -C'
 
+#git
+alias g='git'
+alias gc='g commit'
+
+alias gp='g push'
+alias gf='g fetch'
+
+alias gs='g st'
+alias gst='g status'
+
 #grep 
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
