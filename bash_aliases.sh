@@ -1,11 +1,24 @@
 #linux workflow aliases by Hayaka Kayori @ 2021
+
+#navigation
+alias ..="cd .."
+alias ...="cd ../.."
+#alias --="cd -"
 # protect cp, mv, rm command with confirmation + verbose
 alias cp='cp -iv'
 alias mv='mv -iv'
 alias rm='rm -iv'
 
 #make directory inside directory
-alias mkd='mkdir -pv'
+alias mkdir='mkdir -pv'
+#create a directory and cd into it
+#mcd() {
+#    mkdir -pv "${1}" && cd "${1}"
+#}
+function mkd() {
+	mkdir -p "$@" && cd "$_";
+}
+
 
 #ls aliases
 alias ls='ls -F --color=auto' 
@@ -14,6 +27,8 @@ alias ll='ls -lah'
 alias lsa='ls -lasSh'
 alias lt='ls -lahS'
 alias l='ls -C'
+# List only directories
+alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
 
 #git
 alias g='git'
@@ -37,4 +52,17 @@ alias myip='curl ipinfo.io/ip'
 alias untar='tar -zxvf'
 
 
-
+# Determine size of a file or total size of a directory
+# need some editing
+function fs() {
+	if du -b /dev/null > /dev/null 2>&1; then
+		local arg=-sbh;
+	else
+		local arg=-sh;
+	fi
+	if [[ -n "$@" ]]; then
+		du $arg -- "$@";
+	else
+		du $arg .[^.]* ./*;
+	fi;
+}
