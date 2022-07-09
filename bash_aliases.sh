@@ -32,6 +32,7 @@ alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
 
 #git
 alias g='git'
+alias ga='g add .'
 alias gc='g commit'
 
 alias gp='g push'
@@ -39,6 +40,7 @@ alias gf='g fetch'
 
 alias gs='g st'
 alias gst='g status'
+alias grem='g remotes'
 
 #grep 
 alias grep='grep --color=auto'

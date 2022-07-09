@@ -8,12 +8,21 @@
 	helper = store
 [alias]
 	gr = log --graph --format=oneline
+
+	#short + branch
 	st = status -sb
     ci = commit
     co = checkout
-    br = branch
+    br = branch	
+	# Show verbose output about tags, branches or remotes
+	tags = tag -l
+	branches = branch --all
+	remotes = remote --verbose
     unstage = reset HEAD --
     last = log -1 HEAD
+
+	# Show the user email for the current repository.
+	whoami = config user.email
 [include]
 	path = ~/.gitconfig_local
 #for user settings
