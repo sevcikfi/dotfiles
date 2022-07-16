@@ -26,7 +26,7 @@ alias la='ls -Ah'
 alias ll='ls -lah' 
 alias lsa='ls -lasSh'
 alias lt='ls -lahS'
-alias l='ls -C'
+alias l='ls -l'
 # List only directories
 alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
 
@@ -51,6 +51,7 @@ alias egrep='egrep --color=auto'
 alias myip='curl ipinfo.io/ip'
 
 #tar
+alias ztar=`tar -zcvf`
 alias untar='tar -zxvf'
 
 
