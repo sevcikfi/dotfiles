@@ -36,8 +36,8 @@ alias ga='git add '
 alias gad='git add .'
 alias gc='git commit'
 
-alias gp='git pull'
-alias gps='git push'
+alias gp='git push'
+alias gpl='git pull'
 alias gf='git fetch'
 
 alias gs='git status'
