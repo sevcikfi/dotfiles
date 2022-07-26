@@ -51,7 +51,7 @@ alias egrep='egrep --color=auto'
 alias myip='curl ipinfo.io/ip'
 
 #tar
-alias ztar=`tar -zcvf`
+alias ztar='tar -zcvf'
 alias untar='tar -zxvf'
 
 
