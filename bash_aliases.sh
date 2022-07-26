@@ -21,9 +21,9 @@ function mkd() {
 
 
 #ls aliases
-alias ls='ls -F --color=auto' 
-alias la='ls -Ah' 
-alias ll='ls -lah' 
+alias ls='ls -F --color=auto'
+alias la='ls -Ah'
+alias ll='ls -lah'
 alias lsa='ls -lasSh'
 alias lt='ls -lahS'
 alias l='ls -l'
@@ -42,7 +42,7 @@ alias gs='g st'
 alias gst='g status'
 alias grem='g remotes'
 
-#grep 
+#grep
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
@@ -54,6 +54,8 @@ alias myip='curl ipinfo.io/ip'
 alias ztar='tar -zcvf'
 alias untar='tar -zxvf'
 
+#df
+alias df='df -HT'
 
 # Determine size of a file or total size of a directory
 # need some editing
