@@ -1,4 +1,6 @@
-## Monero
+#Various additional repos with programs i need/use
+
+## Monero/WhoNix repo
 
 wget https://www.whonix.org/derivative.asc
 sudo cp ~/derivative.asc /usr/share/keyrings/derivative.asc
