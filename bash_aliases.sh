@@ -26,7 +26,7 @@ alias la='ls -Ah'
 alias ll='ls -lah'
 alias lsa='ls -lasSh'
 alias lt='ls -lahS'
-alias l='ls -l'
+alias l='ls -lh'
 # List only directories
 alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
 
