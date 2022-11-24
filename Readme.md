@@ -2,7 +2,7 @@
 
 ## TODO
 
-add maybe dotbot and some setups/requirments.txt for python/different langs?
+add maybe dotbot and some setups/requirements.txt for python/different langs?
 
 ## Tutorial
 

@@ -58,6 +58,8 @@ alias untar='tar -zxvf'
 #df
 alias df='df -HT'
 
+alias ssh-agent-start='eval `ssh-agent -s`'
+
 # Determine size of a file or total size of a directory
 # need some editing
 function fs() {
