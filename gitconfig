@@ -30,3 +30,5 @@
 #	email = user@email
 #	name = name
 
+[pull]
+	rebase = false
