@@ -10,7 +10,7 @@ if [ -f ~/.bashrc ]; then
     rm -v ~/.bashrc
 fi
 ln -s ${BASEDIR}/bashrc ~/.bashrc
-
+#aliases
 if [ -f ~/.bash_aliases.sh ]; then
     rm -v ~/.bash_aliases.sh
 fi
@@ -22,7 +22,7 @@ if [ -f ~/.gitconfig ]; then
     rm -v ~/.gitconfig
 fi
 ln -s ${BASEDIR}/gitconfig ~/.gitconfig
-
+#gitignore
 if [ -f ~/.gitignore ]; then
     rm -v ~/.gitignore
 fi

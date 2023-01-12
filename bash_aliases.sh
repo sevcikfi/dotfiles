@@ -28,7 +28,8 @@ alias lsa='ls -lasSh'
 alias lt='ls -lahS'
 alias l='ls -lh'
 # List only directories
-alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
+alias ld="ls -lF ${colorflag} | grep --color=never '^d'"
+alias lf="ls -lF ${colorflag} | grep -v --color=never '^d'"
 
 #git
 alias g='git st'
