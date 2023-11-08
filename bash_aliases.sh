@@ -61,6 +61,11 @@ alias df='df -HT'
 
 alias ssh-agent-start='eval `ssh-agent -s`'
 
+#update/upgrade
+
+alias upd='sudo apt update'
+alias upg='sudo apt upgrade'
+
 # Determine size of a file or total size of a directory
 # need some editing
 function fs() {
