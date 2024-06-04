@@ -49,6 +49,15 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
+#history
+alias ha="history -a"
+alias hb="history -a; history -r"
+alias hr="history -r"
+alias hl="history | tail -20"
+alias hgrep='history|grep --color'
+
+HISTIGNORE="ha:hb:hr:hl"
+
 #myip from ipinfo.io
 alias myip='curl ipinfo.io/ip'
 

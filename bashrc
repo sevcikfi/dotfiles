@@ -19,9 +19,12 @@ HISTCONTROL=ignoreboth
 
 #History stuff
 HISTSIZE=1048576
-HISTFILE="$~/.bash_history"
+#HISTFILE="~/.bash_history" (wrong file name, pls fix)
 SAVEHIST=$HISTSIZE
 shopt -s histappend # append to history file
+
+export PROMPT_COMMAND='history -a' #appends to history after every command run
+
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -62,7 +65,7 @@ fi
 
 if [ "$color_prompt" = yes ]; then
 #default debian/ubuntu
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w \$\[\033[00m\] '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 # yellow @ green : blue dir
 #    PS1='\e[33;1m\u\[\033[00m\]@\[\033[01;32m\]\h\[\033[00m\]: \[\033[01;34m\]\W\e[0m\$ '
 else
